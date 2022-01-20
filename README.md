@@ -21,7 +21,7 @@ func _ready() -> void:
     set_state(MoveState.IDLE) # setting the initial state as IDLE
 
 func _process(delta: float) -> void:
-    var input = movementScript.get_input()
+    var input = yourMovementInputScript.get_input()
 
     _movement_check(input)
 
